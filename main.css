@@ -5,7 +5,7 @@ body {
     padding: 0;
     height: 100vh;
     font-family: 'Lato', sans-serif;
-    background-color: rgba(255, 0, 127, 0.8);
+    background-color: #006b2e;
     color: snow;
 
 }
@@ -34,9 +34,13 @@ body {
     font-size: 2.5em;
     margin: 20px auto;
     border: 2px solid #050505;
-    box-shadow: 0 0 10px 1px snow;
     outline: none;
 }
+
+.container #cajita:hover{
+    box-shadow: 0 0 10px 5px snow;
+}
+
 
 .butons #botoncito, .butons #borrar{
     width: 200px;
@@ -45,13 +49,16 @@ body {
     border-radius: 10px;
     color: snow;
     border: 2px solid #050505;
-    background-color: #31AFD4;
-    box-shadow: 0 0 10px 1px snow;
+    background-color: #d43131;
     outline: none;
     cursor: pointer;
     margin: 20px 30px;
-
 }
+
+.butons #botoncito:hover, .butons #borrar:hover{
+    box-shadow: 0 0 10px 5px snow;
+}
+
 
 .container #resultado {
     font-size: 3em;
