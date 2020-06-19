@@ -17,6 +17,5 @@ function texto(){
 			return result.innerHTML = "Esto no es palíndromo"
 		}
     }
-
 	return result.innerHTML = "Esto es un palíndromo"
 } 

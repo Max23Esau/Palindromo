@@ -7,7 +7,6 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: #006b2e;
     color: snow;
-
 }
 
 .container {
@@ -41,7 +40,6 @@ body {
     box-shadow: 0 0 10px 5px snow;
 }
 
-
 .butons #botoncito, .butons #borrar{
     width: 200px;
     padding: 8px 0;
@@ -58,7 +56,6 @@ body {
 .butons #botoncito:hover, .butons #borrar:hover{
     box-shadow: 0 0 10px 5px snow;
 }
-
 
 .container #resultado {
     font-size: 3em;
