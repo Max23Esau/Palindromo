@@ -3,23 +3,23 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     font-family: 'Lato', sans-serif;
     background-color: #006b2e;
     color: snow;
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 2em;
+    position: relative;
+    top: 100px;
 }
 
 .container label{
+    max-width: 80vw;
     font-size: 4em;
     text-align: center;
     margin-bottom: 20px;
@@ -27,11 +27,12 @@ body {
 }
 
 .container #cajita{
-    width: 120vh;
+    max-width: 80%;
+    width: 800px;
     border-radius: 15px;
     padding: 10px;
     font-size: 2.5em;
-    margin: 20px auto;
+    margin: 20px 0;
     border: 2px solid #050505;
     outline: none;
 }
@@ -40,17 +41,23 @@ body {
     box-shadow: 0 0 10px 5px snow;
 }
 
+.butons {
+    width: auto;
+    text-align: center;
+    display: flex;
+}
+
 .butons #botoncito, .butons #borrar{
     width: 200px;
+    margin: 20px;
     padding: 8px 0;
     font-size: 2em;
     border-radius: 10px;
     color: snow;
-    border: 2px solid #050505;
+    border: 2px solid #381d1d;
     background-color: #d43131;
     outline: none;
     cursor: pointer;
-    margin: 20px 30px;
 }
 
 .butons #botoncito:hover, .butons #borrar:hover{
@@ -59,6 +66,79 @@ body {
 
 .container #resultado {
     font-size: 3em;
-    margin: 20px 0 0 0;
+    margin: 20px 0;
     text-shadow: 0 0 5px snow;
+}
+
+@media (max-width: 1024px){
+    .container {
+        top: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        top: 0px;
+    }
+    .container label {
+        font-size: 3em;
+    }
+    .container #cajita {
+        width: 500px;
+    }
+    .butons #botoncito, .butons #borrar {
+        margin: 15px;
+    }
+    .container #resultado {
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px){
+    .container {
+        margin: 1em;
+    }
+    .container label {
+        font-size: 2.5em;
+    }
+    .container #cajita {
+        font-size: 2em;
+    }
+    .butons {
+        display: block;
+    }
+    .butons #botoncito, .butons #borrar {
+        width: 180px;
+        font-size: 1.8em;
+    }
+    .container #resultado {
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 375px){
+    .container {
+        top: 25px;
+    }
+    .container label {
+        font-size: 2em;
+    }
+    .container #cajita {
+        margin: 10px 0;
+        padding:  10px;
+        font-size: 1.8em;
+    }
+    .butons #botoncito, .butons #borrar {
+        width: 180px;
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 375px){
+    .butons #botoncito, .butons #borrar {
+        font-size: 1.5em;
+    }
+    .container #resultado {
+        font-size: 1.5;
+    }
 }
